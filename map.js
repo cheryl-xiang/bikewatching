@@ -13,13 +13,13 @@ const map = new mapboxgl.Map({
   zoom: 12, 
   minZoom: 5,
   maxZoom: 18, 
+  attributionControl: false 
 });
 
 let stationFlow = d3.scaleQuantize().domain([0, 1]).range([0, 0.5, 1]);
 let radiusScale; 
 
 map.on('load', async () => {
-    setTimeout(() => map.resize(), 0); 
     //data sources for bike lanes
     map.addSource('boston_route', {
         type: 'geojson',
