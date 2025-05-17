@@ -14,6 +14,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   border-radius: 8px; /* Optional: rounded corners */
 }
+
 #map svg {
     opacity: 75%;
     position: absolute;
@@ -32,17 +33,13 @@ body {
         var(--color-arrivals)
     );
     fill: var(--color);
-    opacity: 75%;
-    position: absolute;
-    z-index: 10;
-    pointer-events: visiblePainted; 
 }
 
 .legend {
   display: flex;
   align-items: center;
   gap: 30px; /* Large gap between swatch-label pairs */
-  margin-block: 3rem; /* Vertical spacing above and below */
+  margin-block: 2rem; /* Vertical spacing above and below */
   font-family: sans-serif;
   font-size: 0.9rem;
 }
@@ -72,4 +69,6 @@ body {
   border-radius: 50%;
   background-color: var(--color);
 }
+
+
 
